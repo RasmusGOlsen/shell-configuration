@@ -38,7 +38,7 @@
           "foreground": "white",
           "trailing_diamond": "\ue0b4",
           "style": "diamond",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ end }}",
           "type": "python",
           "properties": {
             "fetch_version": false
@@ -46,10 +46,10 @@
         },
         {
           "type": "git",
-          "style": "diamond",
-          "trailing_symbol": "\ue0b4",
           "foreground": "white",
           "background": "lightCyan",
+          "trailing_diamond": "\ue0b4",
+          "style": "diamond",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed}} <#CB4B16>{{ .Working.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}{{ end }}{{ if .Staging.Changed }} <#81C784>{{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} <#FFEB3B> {{ .StashCount }}</>{{ end }} ",
           "properties": {
             "fetch_status": true,
